@@ -12,7 +12,7 @@ Este script Python muestra cómo conectarse a una base de datos MySQL utilizando
 2. Instala las dependencias requeridas ejecutando el siguiente comando en tu terminal:
 
 ```bash
-pip install mysql-connector-python pytest python-dotenv
+pip install -r requirements.txt
 ```
 
 ## Configuración del Entorno
@@ -32,7 +32,7 @@ DATABASE=tu_base_de_datos
 1. Ejecuta el script Python `mysql_connector_test.py` utilizando el siguiente comando:
 
 ```bash
-python mysql_connector_test.py
+pytest
 ```
 
 2. El script se conectará a la base de datos MySQL utilizando las credenciales proporcionadas en el archivo `.env`. Realizará pruebas para verificar la conexión y la recuperación de datos de diferentes tablas.
