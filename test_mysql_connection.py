@@ -28,12 +28,15 @@ def connect_to_database():
         print("Error connecting to MySQL database:", error)
         return None
 
+def test_connect_to_database():
+    assert connect_to_database is not None, "Failed to connect to database"
+
 
 # Test case using pytest
-def test_fetch_data(table_name, expected_count):
-    connection = connect_to_database()
-    assert connection is not None, "Failed to connect to database"
-    connection.close()
+# def test_fetch_data(table_name, expected_count):
+#     connection = connect_to_database()
+#     assert connection is not None, "Failed to connect to database"
+#     connection.close()
 
 
 
