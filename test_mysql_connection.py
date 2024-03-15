@@ -8,28 +8,31 @@ import pytest
 load_dotenv()
 
 # Get environment variables
-HOST = os.getenv("HOST")
-PORT = os.getenv("PORT")
-USER = os.getenv("USER")
-PASSWORD = os.getenv("PASSWORD")
+MYSQL_HOST = os.getenv("MYSQL_HOST")
+MYSQL_PORT = os.getenv("MYSQL_PORT")
+MYSQL_USER = os.getenv("MYSQL_USER")
+MYSQL_PASSWORD = os.getenv("MYSQL_PASSWORD")
 
 
 # Connect to MySQL database
 def connect_to_database():
+    connection = None
     try:
         connection = mysql.connector.connect(
-            host=HOST,
-            port=PORT,
-            user=USER,
-            password=PASSWORD,
+            host=MYSQL_HOST,
+            port=MYSQL_PORT,
+            user=MYSQL_USER,
+            password=MYSQL_PASSWORD,
         )
-        return connection
     except mysql.connector.Error as error:
-        print("Error connecting to MySQL database:", error)
-        return None
+        print("Error connecting to MySQL database:")
+        print(error)
+    return connection
 
 def test_connect_to_database():
-    assert connect_to_database is not None, "Failed to connect to database"
+    connection = connect_to_database()
+    assert connection is not None, "Failed to connect to database"
+    connection.close()
 
 
 # Test case using pytest
@@ -37,6 +40,4 @@ def test_connect_to_database():
 #     connection = connect_to_database()
 #     assert connection is not None, "Failed to connect to database"
 #     connection.close()
-
-
 
