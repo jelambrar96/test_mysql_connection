@@ -1,7 +1,3 @@
-Claro, aquí te dejo un ejemplo de README que explica el código anterior:
-
----
-
 # Python Script with MySQL Connector and pytest
 
 Este script Python muestra cómo conectarse a una base de datos MySQL utilizando el conector de MySQL (`mysql-connector-python`) y cómo escribir pruebas utilizando `pytest` para verificar la conexión y recuperación de datos.
