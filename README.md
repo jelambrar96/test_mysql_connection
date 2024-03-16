@@ -1,6 +1,8 @@
 # Python Script with MySQL Connector and pytest
 
-Este script Python muestra cómo conectarse a una base de datos MySQL utilizando el conector de MySQL (`mysql-connector-python`) y cómo escribir pruebas utilizando `pytest` para verificar la conexión y recuperación de datos.
+Este README proporciona una guía paso a paso para usar el script, incluyendo la instalación de dependencias, configuración del entorno, ejecución del script, y ejemplos de salida tanto para una conexión exitosa como para una conexión fallida.
+
+El script de python `test_mysql_connection.py` muestra cómo conectarse a una base de datos MySQL utilizando el conector de MySQL (`mysql-connector-python`) y cómo escribir pruebas utilizando `pytest` para verificar la conexión y recuperación de datos.
 
 ## Instalación de Dependencias
 
@@ -61,7 +63,9 @@ mysql_connector_test.py::test_fetch_data[products-20] PASSED                    
 Error connecting to MySQL database: 1045 (28000): Access denied for user 'tu_usuario'@'localhost' (using password: YES)
 ```
 
----
+____
 
-Este README proporciona una guía paso a paso para usar el script, incluyendo la instalación de dependencias, configuración del entorno, ejecución del script, y ejemplos de salida tanto para una conexión exitosa como para una conexión fallida.
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/jelambrar1)
+
+Made with Love ❤️ by [@jelambrar96](https://github.com/jelambrar96)
 
