@@ -18,11 +18,11 @@ pip install -r requirements.txt
 Crea un archivo `.env` en el mismo directorio que tu script Python y añade las siguientes variables con los valores correspondientes:
 
 ```plaintext
-HOST=localhost
-PORT=3306
-USER=tu_usuario
-PASSWORD=tu_contraseña
-DATABASE=tu_base_de_datos
+MYSQL_HOST=localhost
+MYSQL_PORT=3306
+MYSQL_USER=tu_usuario
+MYSQL_PASSWORD=tu_contraseña
+MYSQL_DATABASE=tu_base_de_datos
 ```
 
 ## Uso del Script
